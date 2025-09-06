@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # keywork-frontend-1stProject
 The First project for keywork front-end with sanad
 
@@ -23,8 +22,6 @@ A modern, responsive e-commerce website for skincare and beauty products built w
 ## 🎯 Overview
 
 Glowing is a beautifully designed e-commerce website specializing in skincare and beauty products. The website features a modern, clean interface with smooth animations, responsive design, and an intuitive shopping experience. It showcases various skincare products with detailed information, pricing, and a fully functional shopping cart system.
-
-## ✨ Features
 
 ### 🛍️ E-commerce Functionality
 - **Product Catalog**: Display of skincare products with high-quality images
@@ -72,14 +69,3 @@ Glowing is a beautifully designed e-commerce website specializing in skincare an
 **Project**: Glowing E-commerce Website
 
 ---
-
-## 🎨 Design Philosophy
-
-Glowing embodies the essence of modern skincare e-commerce with:
-- **Clean Aesthetics**: Minimalist design focusing on product presentation
-- **User-Centric**: Intuitive navigation and shopping experience
-- **Performance**: Fast loading and smooth interactions
-- **Accessibility**: Inclusive design for all users
----
-
-*Built with ❤️ for the beauty and skincare community*
