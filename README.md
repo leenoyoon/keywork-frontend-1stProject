@@ -1,3 +1,6 @@
+# keywork-frontend-1stProject
+The First project for keywork front-end with sanad
+
 # 🌟 Glowing - E-commerce Website
 
 A modern, responsive e-commerce website for skincare and beauty products built with vanilla HTML, CSS, and JavaScript.
