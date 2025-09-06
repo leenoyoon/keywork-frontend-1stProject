@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glowing - Ecommerce Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="search-bar">
+        <input type="text" placeholder="Search product" class="search-input">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+
+      <a href="#" class="logo">
+        <img src="assets/images/logo.png" alt="Glowing Logo">
+      </a>
+
+      <ul class="nav-links">
+        <li>
+          <a href="#" onclick="scrollToSection('home'); return false;">Home</a>
+        </li>
+        <li>
+          <a href="#" onclick="scrollToSection('collection'); return false;">Collection</a>
+        </li>
+        <li>
+          <a href="#" onclick="scrollToSection('shop'); return false;">Our Best Sellers</a>
+        </li>
+        <li>
+          <a href="#" onclick="scrollToSection('shop-under-25'); return false;">Under 25$</a>
+        </li>
+        <li>
+          <a href="#" onclick="scrollToSection('banner'); return false;">Banner</a>
+        </li>
+        <li>
+          <a href="#" onclick="scrollToSection('feature'); return false;">Features</a>
+        </li>
+      </ul>
+
+      <div class="header-actions">
+        <button type="button" class="header-action-btn cart-button" aria-label="cart item">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="btn-badge">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section hero" id="home" aria-label="hero" data-section>
+      <div class="container">
+
+        <ul class="has-scrollbar">
+          <li class="scrollbar-item">
+            <div class="hero-card has-bg-image hero-banner-1">
+              <div class="card-content">
+                <h1 class="h1 hero-title">
+                  Reveal The
+                  <br>
+                  Beauty of Skin
+                </h1>
+                <p class="hero-text">
+                  Made using clean, non-toxic ingredients, our products are
+                  designed for everyone.
+                </p>
+                <p class="price">Starting at $7.99</p>
+                <a href="#" class="btn btn-primary">Shop Now</a>
+              </div>
+            </div>
+          </li>
+          <li class="scrollbar-item">
+            <div class="hero-card has-bg-image hero-banner-2">
+              <div class="card-content">
+                <h1 class="h1 hero-title">
+                  Reveal The
+                  <br>
+                  Beauty of Skin
+                </h1>
+                <p class="hero-text">
+                  Made using clean, non-toxic ingredients, our products are
+                  designed for everyone.
+                </p>
+                <p class="price">Starting at $7.99</p>
+                <a href="#" class="btn btn-primary">Shop Now</a>
+              </div>
+            </div>
+          </li>
+          <li class="scrollbar-item">
+            <div class="hero-card has-bg-image hero-banner-3">
+              <div class="card-content">
+                <h1 class="h1 hero-title">
+                  Reveal The
+                  <br>
+                  Beauty of Skin
+                </h1>
+                <p class="hero-text">
+                  Made using clean, non-toxic ingredients, our products are
+                  designed for everyone.
+                </p>
+                <p class="price">Starting at $7.99</p>
+                <a href="#" class="btn btn-primary">Shop Now</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="section collection" id="collection" aria-label="collection">
+      <div class="container">
+        <ul class="collection-list">
+          <li>
+            <div class="collection-card has-before hover:shine">
+              <h2 class="h2 card-title">Summer Collection</h2>
+              <p class="card-text">Starting at $17.99</p>
+              <a href="#" class="btn-link" onclick="scrollToSection('shop'); return false;">
+                <span class="span">Shop Now</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <div class="has-bg-image collection-1"></div>
+            </div>
+          </li>
+
+          <li>
+            <div class="collection-card has-before hover:shine">
+              <h2 class="h2 card-title">What's New?</h2>
+              <p class="card-text">Get the glow</p>
+              <a href="#" class="btn-link" onclick="scrollToSection('shop'); return false;">
+                <span class="span">Discover Now</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <div class="has-bg-image collection-2"></div>
+            </div>
+          </li>
+
+          <li>
+            <div class="collection-card has-before hover:shine">
+              <h2 class="h2 card-title">Buy 1 Get 1</h2>
+              <p class="card-text">Starting at $7.99</p>
+              <a href="#" class="btn-link" onclick="scrollToSection('shop-under-25'); return false;">
+                <span class="span">Discover Now</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <div class="has-bg-image collection-3"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section shop" id="shop" aria-label="shop">
+      <div class="container">
+        <div class="title-wrapper">
+          <h2 class="h2 section-title">Our Bestsellers</h2>
+        </div>
+        <div id="products-container" class="has-scrollbar"></div>
+      </div>
+    </section>
+
+    <section class="section shop" id="shop-under-25" aria-label="shop under $25">
+      <div class="container">
+        <div class="title-wrapper">
+          <h2 class="h2 section-title">Under $25</h2>
+        </div>
+
+        <div id="products-under-25-container" class="has-scrollbar"></div>
+      </div>
+    </section>
+
+    <section class="section banner" aria-label="banner" id="banner">
+      <div class="container">
+        <ul class="banner-list">
+          <li>
+            <div class="banner-card banner-card-1 has-before hover:shine">
+              <p class="card-subtitle">New Collection</p>
+              <h2 class="h2 card-title">Discover Our Autumn Skincare</h2>
+              <div class="has-bg-image banner-1"></div>
+            </div>
+          </li>
+
+          <li>
+            <div class="banner-card banner-card-2 has-before hover:shine">
+              <h2 class="h2 card-title">25% off Everything</h2>
+              <p class="card-text">
+                Makeup with extended range in colors for every human.
+              </p>
+              <div class="has-bg-image banner-2"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section feature" aria-label="feature" id="feature">
+      <div class="container">
+        <h2 class="h2-large section-title">Why Shop with Glowing?</h2>
+
+        <ul class="flex-list">
+          <li class="flex-item">
+            <div class="feature-card">
+              <img src="./assets/images/feature-1.jpg" alt="Guaranteed PURE" class="card-icon">
+              <h3 class="h3 card-title">Guaranteed PURE</h3>
+              <p class="card-text">
+                All Grace formulations adhere to strict purity standards and
+                will never contain harsh or toxic ingredients
+              </p>
+            </div>
+          </li>
+
+          <li class="flex-item">
+            <div class="feature-card">
+              <img src="./assets/images/feature-2.jpg" alt="Completely Cruelty-Free" class="card-icon">
+              <h3 class="h3 card-title">Completely Cruelty-Free</h3>
+              <p class="card-text">
+                All Grace formulations adhere to strict purity standards and
+                will never contain harsh or toxic ingredients
+              </p>
+            </div>
+          </li>
+
+          <li class="flex-item">
+            <div class="feature-card">
+              <img src="./assets/images/feature-3.jpg" alt="Ingredient Sourcing" class="card-icon">
+              <h3 class="h3 card-title">Ingredient Sourcing</h3>
+              <p class="card-text">
+                All Grace formulations adhere to strict purity standards and
+                will never contain harsh or toxic ingredients
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="copyright">
+        <span class="developer-credit">
+          Developed By Leen Oyoon
+        </span>
+        &copy; 2025
+        <span class="developer-credit">leenoyoon2@gmail.com</span>
+      </p>
+      <img src="assets/images/logo.png" alt="Glowing Logo" class="footer-logo">
+      <ul class="social-list">
+        <li>
+          <a href="#" class="social-link" aria-label="Follow us on Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link" aria-label="Follow us on Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link" aria-label="Follow us on Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link" aria-label="Follow us on YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <a href="#top" class="back-top-btn" aria-label="back to top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button type="button" class="cart-close-btn" id="cart-close-btn" aria-label="Close cart">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="cart-items" id="cart-items-container"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total-price">$0.00</span>
+      </div>
+      <button type="button" class="checkout-btn" id="clear-all-btn">Clear all</button>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="product-popup" id="product-popup">
+    <div class="popup-content">
+      <button type="button" class="popup-close-btn" id="popup-close-btn" aria-label="Close product details">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="popup-body">
+        <div class="popup-image">
+          <img id="popup-product-image" src="./assets/images/product-01.jpg" alt="Product image" class="img-cover">
+        </div>
+        <div class="popup-details">
+          <h2 id="popup-product-title" class="popup-title">Product Title</h2>
+          <div class="popup-price">
+            <span id="popup-product-price" class="price-current"></span>
+            <span id="popup-product-old-price" class="price-old"></span>
+            <span id="popup-product-discount" class="discount-badge"></span>
+          </div>
+          <p id="popup-product-description" class="popup-description"></p>
+          <div class="popup-features">
+            <h3>Product Features:</h3>
+            <ul id="popup-product-features"></ul>
+          </div>
+          <div class="popup-actions">
+            <button type="button" class="btn btn-primary popup-add-to-cart" id="popup-add-to-cart">
+              <i class="fas fa-shopping-bag"></i>
+              Add to Cart
+            </button>
+            <button type="button" class="btn btn-secondary popup-wishlist" id="popup-wishlist">
+              <i class="fas fa-heart"></i>
+              Add to Wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
