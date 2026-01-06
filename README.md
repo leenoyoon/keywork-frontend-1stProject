@@ -64,8 +64,8 @@ Glowing is a beautifully designed e-commerce website specializing in skincare an
 
 ## 📞 Contact
 
-**Developer**: Leen Oyoon  
-**Email**: leenoyoon2@gmail.com  
+**Developer**: AbdUlrhman Helali 
+**Email**: abdulrhmanhelali1@gmail.com  
 **Project**: Glowing E-commerce Website
 
 ---
